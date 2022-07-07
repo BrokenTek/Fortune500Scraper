@@ -89,7 +89,7 @@ class StockScraper(object):
             stock.append(self.data_lists[2][i].split()[1])  # appends high
             stock.append(self.data_lists[3][i].split()[0])  # appends price change
             stock.append(self.data_lists[3][i].split()[1])  # appends price change percentage (can be negative)
-            stock.append(self.data_lists[4][i].split()[1])  # appends date
+            stock.append(self.data_lists[4][i].split()[5])  # appends date
             list_of_stocks.append(stock)                    # appends the stock data, which is a list, into the outer list
         # returns the data
         return list_of_stocks
